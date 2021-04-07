@@ -80,3 +80,48 @@
     <Debug v-if="!production" />
   </div>
 </template>
+
+<script>
+import Debug from '@/components/Debug.vue'
+
+export default {
+  components: {
+    Debug
+  },
+
+  data() {
+    return {
+      production: process.env.NODE_ENV === 'production',
+      mobileNav: false,
+      showNotice: false
+    }
+  },
+
+  watch: {
+    $route() {
+      this.mobileNav = false;
+    }
+  },
+
+  async beforeCreate() {
+    await this.$store.dispatch('getStoredData');
+  },
+
+  mounted() {
+    setTimeout(() => {
+      this.showNotice = true;
+    }, 15000);
+  }
+}
+</script>
+
+<style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+/*@import '@/scss/main';*/
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+</style>
