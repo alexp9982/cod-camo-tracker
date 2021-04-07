@@ -19,8 +19,8 @@ export default {
 
 <style lang="scss" scoped>
 .debug {
-  background: $elevation-6-color;
-  border-radius: $border-radius;
+  /*background: $elevation-6-color;*/
+  /*border-radius: $border-radius;*/
   bottom: 100px;
   display: flex;
   flex-direction: column;
@@ -29,9 +29,9 @@ export default {
   right: 25px;
   z-index: 9;
 
-  @media (max-width: $tablet) {
+  /*@media (max-width: $tablet) {
     display: none;
-  }
+  }*/
 
   h2 {
     font-weight: 600;
