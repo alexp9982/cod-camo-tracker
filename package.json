@@ -1,10 +1,9 @@
 {
-  "name": "vue",
+  "name": "cod-camo-tracker",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "dev": "vue-cli-service serve --port $PORT",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
