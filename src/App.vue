@@ -1,5 +1,6 @@
 <template>
   <div id="app" :style="{ overflowY: mobileNav ? 'hidden' : null }">
+<!--    <Loader />-->
     <transition name="slidedown">
       <div class="notice" v-if="showNotice">
         <p>Welcome to the Call of Duty Camo Tracker. Enjoy!</p>
