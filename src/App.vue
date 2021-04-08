@@ -64,7 +64,7 @@
       <div>Made by alexp9982</div>
 
       <div>
-        <router-link to="">About</router-link>
+        <router-link to="/about">About</router-link>
         <a href="https://github.com/alexp9982/cod-camo-tracker">Github</a>
       </div>
     </footer>
