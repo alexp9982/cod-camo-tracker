@@ -1,0 +1,54 @@
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 75px;
+
+  @media (max-width: $tablet) {
+    padding: 30px 0;
+  }
+
+  .logo {
+    align-items: center;
+    display: flex;
+    font-size: 26px;
+    font-weight: 600;
+    opacity: .85;
+
+    @media (max-width: $tablet) {
+      font-size: 18px;
+    }
+
+    &.router-link-exact-active {
+      opacity: .85;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    .icon-container {
+      height: 35px;
+      width: 35px;
+
+      @media (max-width: $tablet) {
+        height: 25px;
+        width: 25px;
+      }
+
+      svg {
+        fill: white;
+        position: relative;
+        top: -1px;
+      }
+    }
+
+    p {
+      margin-left: 10px;
+
+      @media (max-width: $mobile) {
+        margin-left: 10px;
+      }
+    }
+  }
+}
