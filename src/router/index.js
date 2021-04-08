@@ -17,26 +17,26 @@ const routes = [
     name: '404 - Page Not Found',
     component: NotFound
   },
-  {
+  /*{
     path: '/bocw',
     name: 'Black Ops Cold War',
-    component: () => import(/* webpackChunkName: "ultra" */ '../views/bocw.vue')
+    component: () => import(/!* webpackChunkName: "ultra" *!/ '../views/bocw.vue')
   },
   {
     path: '/mw2019',
     name: 'Modern Warfare 2019',
-    component: () => import(/* webpackChunkName: "aether" */ '../views/mw2019.vue')
-  },
+    component: () => import(/!* webpackChunkName: "aether" *!/ '../views/mw2019.vue')
+  },*/
   {
     path: '/about',
     name: 'About',
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
-{
+/*{
     path: '/settings',
     name: 'Settings',
-    component: () => import(/* webpackChunkName: "settings" */ '../views/Settings.vue')
-  }
+    component: () => import(/!* webpackChunkName: "settings" *!/ '../views/Settings.vue')
+  }*/
 ]
 
 const router = new VueRouter({
