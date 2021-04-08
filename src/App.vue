@@ -1,5 +1,6 @@
 <template>
   <div id="app" :style="{ overflowY: mobileNav ? 'hidden' : null }">
+<!--    <Loader />-->
     <transition name="slidedown">
       <div class="notice" v-if="showNotice">
         <p>Welcome to the Call of Duty Camo Tracker. Enjoy!</p>
@@ -117,7 +118,7 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-/*@import '@/scss/main';*/
+@import '@/scss/main.scss';
 
 #app {
   display: flex;
