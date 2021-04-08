@@ -1,29 +1,24 @@
-![Vue.js Logo](https://github.com/vercel/vercel/blob/master/packages/frameworks/logos/vue.svg)
+# Call of Duty Camo Tracker
 
-# Vue.js Example
+## The ultimate camo tracker
 
-This directory is a brief example of a [Vue.js](https://vuejs.org/) app that can be deployed with Vercel and zero configuration.
+Call of Duty Camo Tracker is a Call of Duty camouflage tracker to easily manage your progress towards the *DM Ultra* , *Dark Aether* , and *Damascus* camouflages. This is one of my first sites, with heavy inspiration by whom I have mentioned in the credits section of the site.
 
-## Deploy Your Own
+Built using [Vue.js](https://vuejs.org/), hosted by [Vercel](https://vercel.com/).
 
-Deploy your own Vue.js project with Vercel.
+## Features
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/vercel/tree/master/examples/vue)
+- Auto-Saved – Progress is automatically saved and stored locally on your computer.
+- Responsive & Fast – Use it on your computer or smartphone with ease.
+- Export/Import – Export your progress to another device or browser.
+- Ad-free – None of that obnoxious stuff
 
-_Live Example: https://vue.now-examples.now.sh_
+## Bug reports & feature requests
+If you've found a bug or want to request a feature, feel free to [open an issue](https://github.com/alexp9982/cod-camo-tracker/issues/new). Try to be as descriptive as possible.
 
-### How We Created This Example
+## Contributing
+Want to contribute to this project? Read our [contributing guidelines](http://agilevc.com/wp-content/uploads/sites/4/2012/01/not_yet.jpeg).
 
-To get started with Vue.js deployed with Vercel, you can use the [Vue CLI](https://cli.vuejs.org/guide/creating-a-project.html#vue-create) to initialize the project:
+## License
 
-```shell
-$ vue create
-```
-
-### Deploying From Your Terminal
-
-You can deploy your new Vue.js project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
-
-```shell
-$ vercel
-```
+Code released under the [Apache License](https://github.com/alexp9982/cod-camo-tracker/blob/master/LICENSE).
