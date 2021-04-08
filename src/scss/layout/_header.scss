@@ -51,4 +51,56 @@ nav {
       }
     }
   }
+
+  a {
+    color: $text-color;
+    opacity: .5;
+    text-decoration: none;
+    transition: $transition;
+
+    @media (max-width: $tablet) {
+      font-size: 14px;
+    }
+
+    &:hover {
+      @media (min-width: $tablet) {
+        opacity: 1;
+        text-decoration: underline;
+      }
+
+      &.settings i {
+        transform: rotate(45deg);
+      }
+    }
+
+    &.router-link-exact-active {
+      opacity: 1;
+    }
+
+    &.coming-soon {
+      opacity: 1;
+      pointer-events: none;
+      position: relative;
+
+      span {
+        opacity: .5;
+      }
+
+      &::after {
+        bottom: 0;
+        color: $blue;
+        content: 'This feature is currently in progress. It will be coming soon.';
+        font-size: 10px;
+        left: 50%;
+        position: absolute;
+        text-align: center;
+        transform: translate(-50%, calc(100% + 4px));
+        width: 100%;
+      }
+    }
+
+    i {
+      transition: $transition;
+    }
+  }
 }
