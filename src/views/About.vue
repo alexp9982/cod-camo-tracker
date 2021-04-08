@@ -19,7 +19,7 @@
     <p>I borrowed quite a bit of code for this, being my first website. I've learned a lot of new things in relation to JavaScript, something I haven't messed with before. Please don't criticize too hard.</p>
 
     <h4>Support Me By Sharing</h4>
-    <p>At this time, I do not plan to take donations for the site. I made it so me, as well as others can enjoy the camo grinds throughout all these Call of Duty games. Support me by sharing with your friends. :)</p>
+    <p>At this time, I do not plan to take donations for the site. I made it so me, as well as others can enjoy the camo grinds throughout all these Call of Duty games. Support me by sharing with your friends <b>:)</b></p>
   </div>
 </transition>
 </template>
