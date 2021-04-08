@@ -1,1 +1,9 @@
+/**
+ *  Main SCSS file
+ */
+
+// Reset current CSS
+@import './vendors/reset';
+
+// Set Variables and Abstracts
 @import './abstracts/_variables';
