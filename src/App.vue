@@ -48,7 +48,7 @@
         </div>
         <div class="footer">
           <router-link to="">Settings</router-link>
-          <router-link to="">About</router-link>
+          <router-link to="/about">About</router-link>
           <a href="https://github.com/alexp9982/cod-camo-tracker">GitHub</a>
 
           <a href="https://cod-camo-tracker-alexp9982.vercel.app/" class="button">Hope you enjoy!</a>
