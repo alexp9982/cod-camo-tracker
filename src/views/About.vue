@@ -13,7 +13,7 @@
     </div>
 
     <h4>Open Source</h4>
-    <p>Built using <a href="https://vuejs.org/">Vue.js</a>, and hosted using <a href="https://vercel.com/">Vercel</a>. The icon was found from the <a href="https://thenounproject.com/">Noun Project</a>. The GitHub repo at the bottom of the page. If there's any problems, feel free to file an issue.</p>
+    <p>Built using <a href="https://vuejs.org/">Vue.js</a>, and hosted on <a href="https://vercel.com/">Vercel</a>. The icon was found from the <a href="https://thenounproject.com/">Noun Project</a>. The GitHub repo at the bottom of the page. If there's any problems, feel free to file an issue.</p>
 
     <h4>First Website</h4>
     <p>I borrowed quite a bit of code for this, being my first website. I've learned a lot of new things in relation to JavaScript, something I haven't messed with before. Please don't criticize too hard.</p>
@@ -33,7 +33,7 @@ export default {
       features: [
         {
           title: 'Auto-Saved',
-          description: 'Progress is automatically saved and stored on your computer.',
+          description: 'Progress is automatically saved and stored locally on your computer.',
           icon: 'save-outline'
         },
         {
