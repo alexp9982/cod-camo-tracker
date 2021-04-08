@@ -9,7 +9,9 @@
 @import './abstracts/_variables';
 
 // Set Base
-
+@import './base/base';
+@import './base/transitions';
+@import './base/typography';
 
 // Set Individual Components
 @import './components/button';
@@ -19,3 +21,7 @@
 @import './components/select';
 
 // Set Layouts
+@import './layout/container';
+@import './layout/footer';
+@import './layout/header';
+@import './layout/main';
