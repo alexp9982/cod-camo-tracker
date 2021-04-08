@@ -1,1 +1,21 @@
+/**
+ *  Main SCSS file
+ */
+
+// Reset current CSS
+@import './vendors/reset';
+
+// Set Variables and Abstracts
 @import './abstracts/_variables';
+
+// Set Base
+
+
+// Set Individual Components
+@import './components/button';
+@import './components/checkbox';
+@import './components/notice';
+@import './components/notification';
+@import './components/select';
+
+// Set Layouts
