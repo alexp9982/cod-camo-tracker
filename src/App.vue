@@ -21,7 +21,7 @@
       <div>
         <router-link to="">Black Ops Cold War</router-link>
         <router-link to="">Modern Warfare 2019</router-link>
-        <router-link to="" class="icon settings" content="Settings" v-tippy="{ placement: 'bottom' }">
+        <router-link to="/settings" class="icon settings" content="Settings" v-tippy="{ placement: 'bottom' }">
           <eva-icon name="settings-2-outline" fill="white"></eva-icon>
         </router-link>
       </div>
@@ -47,7 +47,7 @@
           <router-link to="">Modern Warfare 2019</router-link>
         </div>
         <div class="footer">
-          <router-link to="">Settings</router-link>
+          <router-link to="/settings">Settings</router-link>
           <router-link to="/about">About</router-link>
           <a href="https://github.com/alexp9982/cod-camo-tracker">GitHub</a>
 
