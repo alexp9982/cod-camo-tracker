@@ -7,7 +7,7 @@
             <h3>{{ setting.name }}</h3>
             <p v-html="setting.description"></p>
             <span class="warning" v-if="setting.warning">
-              <eva-icon name="alert-triangle-outline" fill="ee5253" width="20" height="20"></eva-icon>
+              <eva-icon name="alert-triangle-outline" fill="#ee5253" width="20" height="20"></eva-icon>
             </span>
           </div>
 
