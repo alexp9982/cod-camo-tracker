@@ -138,6 +138,74 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.settings {
+  $border-color: $elevation-4-color;
+  background-color: $elevation-2-color;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
 
+  .setting {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    transition: $transition;
+
+    @media (max-width: $mobile) {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    &:hover {
+      background-color: $elevation-3-color;
+    }
+
+    + .setting {
+      border-top: 1px solid $border-color;
+    }
+
+    h3 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    span.warning {
+      align-items: center;
+      color: $red;
+      display: flex;
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 15px;
+
+      i {
+        margin-right: 10px;
+        position: relative;
+        top: 1px;
+      }
+    }
+
+    button, .button {
+      @media (max-width: $mobile) {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+.button {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: $transition;
+
+  .loader {
+    margin-left: 10px;
+  }
+}
+
+#import {
+  display: none;
+}
 </style>
