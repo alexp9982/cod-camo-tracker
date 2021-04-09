@@ -8,13 +8,14 @@
             <p v-html="setting.description"></p>
             <span class="warning" v-if="setting.warning">
               <eva-icon name="alert-triangle-outline" fill="#ee5253" width="20" height="20"></eva-icon>
+              {{ setting.warning }}
             </span>
           </div>
 
           <button v-if="setting.action !== 'importProgress'"
                   :class="{ warning: setting.warning }"
                   @click="handleAction(setting)"
-                  >{{ setting.button ? setting.button : setting.name }}</button>
+          >{{ setting.button ? setting.button : setting.name }}</button>
 
           <label v-else for="import" class="button" :class="{ disabled: uploading, uploading }">
             <span>{{ setting.name }}</span>
@@ -55,18 +56,18 @@ export default {
         },
         {
           name: 'Reset Black Ops Cold War progress',
-          description: 'Reset your current DM Ultra camouflage progress.',
+          description: 'Reset all your Black Ops Cold War progress.',
           warning: 'This cannot be undone.',
           action: 'resetProgress',
-          param: 'ultra',
+          param: 'bocw',
           button: 'Reset Cold War Progress'
         },
         {
           name: 'Reset Modern Warfare 2019 progress',
-          description: 'Reset your current Dark Aether camouflage progress.',
+          description: 'Reset all your Modern Warfare 2019 progress.',
           warning: 'This cannot be undone.',
           action: 'resetProgress',
-          param: 'aether',
+          param: 'mw2019',
           button: 'Reset progress'
         },
         {
