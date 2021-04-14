@@ -28,4 +28,5 @@ const testing = {
   testkey: "testkey1010101"
 };
 
+// eslint-disable-next-line
 console.log(testing);
