@@ -17,27 +17,27 @@
                   @click="handleAction(setting)"
           >{{ setting.button ? setting.button : setting.name }}</button>
 
-          <label v-else for="import" class="button" :class="{ disabled: uploading, uploading }">
+<!--          <label v-else for="import" class="button" :class="{ disabled: uploading, uploading }">
             <span>{{ setting.name }}</span>
             <Loader :size="18" :thickness="2" :color="'black'" v-if="uploading" />
-          </label>
+          </label>-->
         </div>
       </div>
 
-      <input type="file" id="import" @change="importProgress($event)">
+<!--      <input type="file" id="import" @change="importProgress($event)">-->
     </div>
   </transition>
 </template>
 
 <script>
-import Loader from '@/components/Loader.vue'
+/*import Loader from '@/components/Loader.vue'*/
 
 export default {
   name: "Settings",
 
-  components: {
+  /*components: {
     Loader
-  },
+  },*/
 
   data() {
     return {
@@ -45,22 +45,12 @@ export default {
       uploading: false,
       settings: [
         {
-          name: 'Export progress',
-          description: 'Export your current progress as a file.',
-          action: 'exportProgress',
-        },
-        {
-          name: 'Import progress',
-          description: 'Import progress from an exported file. (Use the option above to export)',
-          action: 'importProgress'
-        },
-        {
           name: 'Reset Black Ops Cold War progress',
           description: 'Reset all your Black Ops Cold War progress.',
           warning: 'This cannot be undone.',
           action: 'resetProgress',
           param: 'bocw',
-          button: 'Reset Cold War Progress'
+          button: 'Reset BOCW Progress'
         },
         {
           name: 'Reset Modern Warfare 2019 progress',
@@ -68,7 +58,7 @@ export default {
           warning: 'This cannot be undone.',
           action: 'resetProgress',
           param: 'mw2019',
-          button: 'Reset progress'
+          button: 'Reset MW 2019 Progress'
         },
         {
           name: 'Reset all progress',
