@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "mw2019"
+  name: "dmultra"
 };
 </script>
 

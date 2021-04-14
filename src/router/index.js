@@ -7,6 +7,15 @@ import NotFound from '../views/404.vue'
 Vue.use(VueRouter)
 
 const routes = [
+  /*
+  URL Route Template
+
+  {
+    path: '',
+    name: '',
+    component: () => import(/!* webpackChunkName: "" *!/ '../views/.vue')
+  },
+  */
   {
     path: '/',
     name: 'Home',
@@ -17,26 +26,36 @@ const routes = [
     name: '404 - Page Not Found',
     component: NotFound
   },
-  /*{
+  {
     path: '/bocw',
     name: 'Black Ops Cold War',
-    component: () => import(/!* webpackChunkName: "ultra" *!/ '../views/bocw.vue')
+    component: () => import(/* webpackChunkName: "bocw" */ '../views/bocw.vue')
   },
   {
     path: '/mw2019',
     name: 'Modern Warfare 2019',
-    component: () => import(/!* webpackChunkName: "aether" *!/ '../views/mw2019.vue')
-  },*/
+    component: () => import(/* webpackChunkName: "mw2019" */ '../views/mw2019.vue')
+  },
   {
     path: '/about',
     name: 'About',
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
-/*{
+  {
     path: '/settings',
     name: 'Settings',
-    component: () => import(/!* webpackChunkName: "settings" *!/ '../views/Settings.vue')
-  }*/
+    component: () => import(/* webpackChunkName: "settings" */ '../views/Settings.vue')
+  },
+  {
+    path: '/bocw/dmultra',
+    name: 'Dark Matter Ultra',
+    component: () => import(/* webpackChunkName: "dmultra" */ '../views/bocw/dmultra.vue')
+  },
+  {
+    path: '/bocw/darkaether',
+    name: 'Dark Aether',
+    component: () => import(/* webpackChunkName: "darkaether" */ '../views/bocw/darkaether.vue')
+  },
 ]
 
 const router = new VueRouter({

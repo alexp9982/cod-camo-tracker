@@ -42,8 +42,8 @@ export default {
           icon: 'smartphone-outline'
         },
         {
-          title: 'Export/Import',
-          description: 'Export your progress to another device or browser.',
+          title: 'Export/Import (Subject to change)',
+          description: 'Export your progress to another device or browser. (Future plans may change this)',
           icon: 'external-link-outline'
         }
       ]

@@ -1,6 +1,5 @@
 <template>
   <div id="app" :style="{ overflowY: mobileNav ? 'hidden' : null }">
-<!--    <Loader />-->
     <transition name="slidedown">
       <div class="notice" v-if="showNotice">
         <p>Welcome to the Call of Duty Camo Tracker. Enjoy!</p>
@@ -19,9 +18,9 @@
         <p><span>Call of Duty Camo Tracker</span></p>
       </router-link>
       <div>
-        <router-link to="">Black Ops Cold War</router-link>
-        <router-link to="">Modern Warfare 2019</router-link>
-        <router-link to="" class="icon settings" content="Settings" v-tippy="{ placement: 'bottom' }">
+        <router-link to="/bocw">Black Ops Cold War</router-link>
+        <router-link to="/mw2019">Modern Warfare 2019</router-link>
+        <router-link to="/settings" class="icon settings" content="Settings" v-tippy="{ placement: 'bottom' }">
           <eva-icon name="settings-2-outline" fill="white"></eva-icon>
         </router-link>
       </div>
@@ -43,11 +42,11 @@
           <eva-icon name="close" fill="white" @click="mobileNav = !mobileNav"></eva-icon>
         </div>
         <div>
-          <router-link to="">Black Ops Cold War</router-link>
-          <router-link to="">Modern Warfare 2019</router-link>
+          <router-link to="/bocw">Black Ops Cold War</router-link>
+          <router-link to="/mw2019">Modern Warfare 2019</router-link>
         </div>
         <div class="footer">
-          <router-link to="">Settings</router-link>
+          <router-link to="/settings">Settings</router-link>
           <router-link to="/about">About</router-link>
           <a href="https://github.com/alexp9982/cod-camo-tracker">GitHub</a>
 
