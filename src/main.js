@@ -22,11 +22,3 @@ new Vue({
   store,
   render: h => h(App),
 }).$mount('#app')
-
-
-const testing = {
-  testkey: ${{ secrets.TESTKEY }}
-};
-
-// eslint-disable-next-line
-console.log(testing);
