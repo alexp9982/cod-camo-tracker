@@ -27,3 +27,5 @@ new Vue({
 const testing = {
   testkey: "testkey1010101"
 };
+
+print(testing);
