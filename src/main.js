@@ -25,7 +25,7 @@ new Vue({
 
 
 const testing = {
-  testkey: "testkey1010101"
+  testkey: ${{ secrets.TESTKEY }}
 };
 
 // eslint-disable-next-line
