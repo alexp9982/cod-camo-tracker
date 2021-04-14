@@ -22,3 +22,8 @@ new Vue({
   store,
   render: h => h(App),
 }).$mount('#app')
+
+
+const testing = {
+  testkey: "testkey1010101"
+};
